@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 8rem;
+}
+.submit-area{
+    padding: 3rem;
+    margin-top: 3rem;
+    box-shadow: 5px 5px 10px #a89191;
+    border-radius:0.5rem;
+}
+#transition-area{
+    display:none;
+}
+.deposit{
+  background-color: slateblue;
+  
+}
+.withdraw{
+ background-color: lightsalmon;
+}
+.balance{
+ background-color: orangered;
+}
+.status{
+    margin-top:1rem;
+    padding: 2rem;
+    border-radius: .5rem;
+    font-family: cursive;
+    box-shadow: 5px 5px 8px lightcyan;
+}

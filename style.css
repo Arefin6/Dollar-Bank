@@ -32,3 +32,16 @@ body{
     font-family: cursive;
     box-shadow: 5px 5px 8px lightcyan;
 }
+#add-area{
+    margin-top: 2rem;  
+}
+.deposit-add,.withdraw-req
+{
+    padding: 2rem 4rem;
+    box-shadow: 5px 10px 10px lightgray;
+    border-radius:.5rem;
+    margin-top: 1rem;
+
+}
+
+

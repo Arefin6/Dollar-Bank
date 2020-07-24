@@ -25,7 +25,7 @@
                 <div class="col-md-4 col-sm-12 text-white">
                     <div class="deposit status">
                         <h5>Deposit</h5>
-                        <h2>$00</h2>
+                        <h2>$ <span id="current-deposit">00</span>  </h2>
                     </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
@@ -34,15 +34,35 @@
                         <h2>$00</h2>
                     </div>
                 </div>
-                <div class="col-md-4  col-sm-12 text-white ">
+                <div class="col-md-4  col-sm-12 text-white">
                     <div class="balance status">
                         <h5>Balance</h5>
-                        <h2>$100</h2>
+                        <h2>$ <span id="current-balance">100</span> </h2>
                     </div>
                 </div>
             </div>  
+            <div class="row" id="add-area">
+                <div class="col-md-6 col-sm-12">
+                    <div class="deposit-add">
+                        <h4>Deposit</h4>
+                        <br>
+                        <input id="deposit-amount" type="text"class="form-control" placeholder="$Enter Deposit Amount">
+                        <br>
+                        <button id="deposit-btn"class="btn btn-success">Deposit</button>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="withdraw-req">
+                        <h4>Withdraw </h4>
+                        <br>
+                        <input type="text"  class="form-control" placeholder="$Enter Withdraw Amount">
+                        <br>
+                        <button id="withdraw-btn" class="btn btn-success">Withdraw</button>
+                    </div>
+                </div>
+            </div>
         </div>
-
+         
          <script src="app.js"></script>
          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>

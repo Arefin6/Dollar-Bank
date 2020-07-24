@@ -8,23 +8,47 @@ loginBtn.addEventListener("click",function(){
     transitionArea.style.display = "block";
 
 });
+
+//Deposit Btn Event
 const depositBtn = document.getElementById("deposit-btn");
 depositBtn.addEventListener("click",function(){
-   const depositAmount = document.getElementById("deposit-amount").value;const depositNumber = parseFloat(depositAmount);
+   
+    const depositNumber = getInput("deposit-amount");
 
-    updateSpan("current-deposit",depositNumber);
-    updateSpan("current-balance",depositNumber);
+    updateSpanText("current-deposit",depositNumber);
+    updateSpanText("current-balance",depositNumber);
     document.getElementById("deposit-amount").value="";
 
    //console.log(totalBalance);
-function updateSpan(id,depositNumber){
+
+});
+
+function updateSpanText(id,depositNumber){
 
     const currentBalance = document.getElementById(id).innerText;
     const currentBalanceNumber = parseFloat(currentBalance); 
     const totalBalance = depositNumber + currentBalanceNumber;
     document.getElementById(id).innerText = totalBalance;
       }   
+
+function getInput(id){
+    const WithdrawAmount = document.getElementById(id).value;
+    const withdrawNumber = parseFloat(WithdrawAmount);
+    return withdrawNumber;
+}
+
+//withdraw Btn Event
+const withdrawBtn = document.getElementById("withdraw-btn").addEventListener("click",function(){
+    
+
+    const withdrawNumber= getInput("withdraw-amount");
+
+    updateSpanText("current-withdraw",withdrawNumber);
+    updateSpanText("current-balance",-1*withdrawNumber);
+    document.getElementById("withdraw-amount").value="";
+    
 });
-const withdrawBtn = document.getElementById("withdraw-btn");   
+  
+  
 
 
